@@ -10,3 +10,12 @@ Since we have two score and we don't really know which one is better we just ave
 Finally we sort all the records by this final score and explore the top n records. To help the investigation we show which of the variables are driving these top scoring records with a heat map of the variable zscores, which can point the investigators to what's making the high score for these top scoring records.
 
 The data can be found here: https://data.cityofnewyork.us/Housing-Development/Property-Valuation-and-Assessment-Data/rgy2-tti8
+
+For more details, please see the "NY unsupervised fraud.ipynb" file.
+
+# Discover the possible fraud
+
+After doing all the steps I have metioned above, I output a excel file with 1000 records which have the highest final score and investigate the anomalies in this excel files. Please open "NY_top_with_zs.xlsx" for more details.
+
+After reviewing all the record in the excel files, I write a report for 5 suspicous record in a docs file and the reaason why they are being reported.
+Please open "Possible Fraud Report.docx" for more details.
