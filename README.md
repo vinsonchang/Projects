@@ -1,4 +1,16 @@
 # Unsupervised anomaly detection (fraud) for New York housing
+
+# Data Quality Report(DQR)
+  The Data Quality Report has 3 main Components:
+  1. High-level description of the data
+  2. Two field summary tables
+     Numeric fields( %populated, min, max, mean, standard deviation, # zeros
+     Categorical fields ( # populated, # unique values, most common field value
+  3. The distribution of each fields
+
+For more details, please see the "NY housing DQR.docx" file.
+
+# Detail Steps and Methodology 
 I am doing a forensic-type analysis, looking for anomalies in a dataset. We first do some data cleaning (exclusions, imputation), then build variables that are designed to look for the kinds of anomalies we are interested in, in this case, unusual property valuations.
 
 After we build the variables we know we have lots of correlations and too high dimensionality so we need to remove correlations and reduce dimensionality. Since we don't have a dependent variable the easiest useful thing to do is PCA. We z scale, do PCA, keep the top PCs, then z scale again in order to make each retained PC equally important (optional step).
